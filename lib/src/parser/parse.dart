@@ -321,6 +321,7 @@ class Parser {
           if (numFmtId < 164) {
             //throw Exception(
             //    'custom numFmtId starts at 164 but found a value of $numFmtId');
+            numFmtId+=164;
           }
 
           _excel._numFormats
