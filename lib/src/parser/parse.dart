@@ -316,7 +316,7 @@ class Parser {
 
       document.findAllElements('numFmts').forEach((node1) {
         node1.findAllElements('numFmt').forEach((node) {
-          final numFmtId = int.parse(node.getAttribute('numFmtId')!);
+          var numFmtId = int.parse(node.getAttribute('numFmtId')!);
           final formatCode = node.getAttribute('formatCode')!;
           if (numFmtId < 164) {
             //throw Exception(
